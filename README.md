@@ -8,3 +8,6 @@
 /templatesDemo -- demos use of Python scripts to build dynamic templates
 /disappearingNinja -- practice with variable page names...featuring...turtles
 /form -- simple site that allows user to submit and view form information -- uses one route for POST and GET with a global variable (temporary workaround) to store data.
+/redirectExercise -- practice processing data from forms
+/landing -- basic routing
+/colorPicker -- change color of page based on form submission
