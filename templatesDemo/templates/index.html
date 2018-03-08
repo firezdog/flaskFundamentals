@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Templates Demo</title>
+</head>
+<body>
+    <!--while loops do not work with jinja-->
+    {% for x in range(0,times) %}
+    <p>{{phrase}}</p>
+    {% endfor %}
+    {% if phrase == "hello"%}
+    <p>The phrase says hello.</p>
+    {% endif %}
+</body>
+</html>

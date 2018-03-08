@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>And Then There's This Guy</title>
+</head>
+    <body>
+        {% if color == "blue" %}
+        <img src="{{url_for('static', filename="images/Ninjas/leonardo.jpg")}}"
+        {% elif color == "orange" %}
+        <img src="{{url_for('static', filename="images/Ninjas/michelangelo.jpg")}}"
+        {% elif color == "red" %}
+        <img src="{{url_for('static', filename="images/Ninjas/raphael.jpg")}}"
+        {% elif color == "purple" %}
+        <img src="{{url_for('static', filename="images/Ninjas/donatello.jpg")}}"
+        {% else %}
+        <img src="{{url_for('static', filename="images/Ninjas/notapril.jpg")}}"
+        {% endif %}
+    </body>
+</html>
