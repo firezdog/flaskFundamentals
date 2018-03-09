@@ -11,3 +11,4 @@
 /redirectExercise -- practice processing data from forms
 /landing -- basic routing
 /colorPicker -- change color of page based on form submission
+/ninJAX -- create a server that responds to AJAX requests

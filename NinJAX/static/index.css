@@ -1,0 +1,19 @@
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+#target {
+    height: 700px;
+    margin: auto;
+}
+img {
+    height: 600px;
+}
+button {
+    margin: 10px 15px 0 15px
+}
+form {
+    display: block;
+    text-align: center;
+}
