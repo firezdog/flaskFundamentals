@@ -76,7 +76,7 @@ def checkBirthday(birthday):
         then = map(int, then)
         today = [now.month,now.day,now.year]
         #Check to see if date exists.
-        if then[0] < 12:
+        if then[0] < 13:
             if then[0] in [1,3,5,7,8,10,12]:
                 if then[1] in range(1,32):
                     match = True
