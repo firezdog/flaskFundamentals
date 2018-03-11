@@ -1,0 +1,11 @@
+#wrapper {
+    margin: 2%;
+}
+
+textarea + p {
+    margin: 0
+}
+
+.invalid {
+    color: red
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="index.css") }}">
+</head>
+<body>
+    <h1>Welcome to the Great Number Game</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess</p>
+    <form action="/" method="POST">
+        <input type="text" name="guess">
+        <button>Submit</button>
+    </form>
+    <div id="result" class="{{ session["class"] }}">
+        <h2>{{ session["result"] }}</h2>
+        {% if session["class"] == "correct" %}
+        <form id="restart" action="/reset" method="POST"><button>Restart</button></form>
+        {% endif %}
+    </div>
+</body>
+</html>
