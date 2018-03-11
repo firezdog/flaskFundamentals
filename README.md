@@ -15,4 +15,5 @@
 /sessionCounter -- uses flask.session to count number of times homepage has been loaded\
 /guess -- guess the number game -- using routes and sessions\
 /validForm -- adds validation to the /form exercise\
-/ninjaGold -- game that uses sessions and routers (along with AJAX)
+/ninjaGold -- game that uses sessions and routers (along with AJAX)\
+/registration -- registration form with validation

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="index.css") }}"
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class="flashes">
+    {% for message in messages %}
+        <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %} 
+    <form action="/" method="POST">
+        <p>Password must be at least 8 digits, containing at least one capital letter and at least one numeral. Date should follow the format month/day/year (year is four digits).</p>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first" placeholder="Jane"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last" placeholder="Doe"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" placeholder="jane.doe@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="text" name="birthday" placeholder="xx/xx/xxxx"></td>
+            </tr>    
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm:</td>
+                <td><input type="password" name="confirm_password"></td>
+            </tr>
+        </table>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
